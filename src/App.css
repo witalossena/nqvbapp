@@ -26,6 +26,13 @@ thead tr th{
 }
 
 tbody tr td{
-  text-align: left;
- 
+  text-align: left; 
+}
+
+.t-center{
+  text-align: center;
+}
+
+.col-name-th{
+  width: 75px;
 }

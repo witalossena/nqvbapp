@@ -15,8 +15,6 @@ function App() {
     return kd.toFixed(3)
   };
 
-
-
   return (
     <div className="App">
       <div className="container">
@@ -25,11 +23,11 @@ function App() {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">nome</th>
-                <th scope="col">vitórias</th>
-                <th scope="col">baixas</th>
-                <th scope="col">Kd</th>
-                <th scope="col">mortes</th>
+                <th className="col-name-th" scope="col">nome</th>
+                <th className="t-center" scope="col">vitórias</th>
+                <th className="t-center" scope="col">baixas</th>
+                <th className="t-center" scope="col">Kd</th>
+                <th className="t-center" scope="col">mortes</th>
               </tr>
             </thead>
             <tbody>
@@ -37,10 +35,10 @@ function App() {
                 <tr key={player.id}>
                   <th scope="row">{player.position}</th>
                   <td>{player.name}</td>
-                  <td>{player.wins}</td>
-                  <td>{player.kills}</td>
-                  <td>{Kdformatter(player.kdRatio)}</td>
-                  <td>{player.deaths}</td>
+                  <td className="t-center">{player.wins}</td>
+                  <td className="t-center">{player.kills}</td>
+                  <td className="t-center">{Kdformatter(player.kdRatio)}</td>
+                  <td className="t-center">{player.deaths}</td>
                 </tr>
               ))}
             </tbody>
